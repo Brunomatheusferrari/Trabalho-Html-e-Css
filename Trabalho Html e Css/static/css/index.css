@@ -1,3 +1,4 @@
+/*Alterações Gerais*/
 
 html {
     scroll-behavior: smooth;
@@ -13,11 +14,19 @@ header {
     background-position: left;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 }
 
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: normal;
+    
+}
 body {
     background: rgb(14,14,14);
-    background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(205,26,26,1) 900%);
+    
     
 }
 
@@ -49,17 +58,12 @@ body {
     border-radius: 30px;
 }
 
-.kyotoBannerTitle {
-    color: #fafafa;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    text-align: center ;
-    padding-top: 30px;
-}
+
 
  .main {
     margin-left: 12px;
     margin-right: 12px;
+    
 } 
 
 #section1 {
@@ -68,12 +72,101 @@ body {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    
 }
 
-.kyotoBannerImg {
-    max-width:100%;
-    max-height:100%;
+
+
+
+
+/*Imagens Banners*/
+
+.imagemBanner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/KyotoBanner2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 200px;
     border-radius: 30px;
+    margin-top: 20px;
+    
+    
+}
+
+.imagemBannerTokyo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/TokyoBanner2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 60px;
+   
+}
+
+.imagemBannerVancouver {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/VancouverBanner2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 60px;
+  
+}
+
+.imagemBannerNewYork {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/NovaYorkBanner2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 60px;
+   
+}
+
+.imagemBannerOsaka {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/OsakaBanner2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 60px;
+   
+}
+/* Conteúdo Banners */
+
+.tituloBanner {
+   height: 100px;
+   
+}
+
+.kyotoBannerTitle {
+    color: #fafafa;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center ;
+    font-size: 80px;
+    margin-top: 15px;
 }
 
 .linkVerMais {
@@ -87,8 +180,1083 @@ body {
     text-decoration: none;
     margin:0 ;
     color: white;
-    background: linear-gradient(45deg, rgba(128, 26, 26, 0.541) 0%, rgba(205,26,26,1) 100%);
+    background: linear-gradient(45deg, rgba(128, 26, 26) , rgba(205,26,26));
     padding: 15px 25px 15px 25px;
     border-radius: 30px;
+    margin-top: 0px;
+  
+}
+
+.divLinkVerMais {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#banner1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Pop Up Config*/
+
+#popUpModel {
+    /* margin: 20px; */
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    height: 97%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: rgb(14,14,14);
+    background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    
+}
+
+#popUpModel2 {
+    
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    height: 97%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: rgb(14,14,14);
+    background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    
+}
+
+#popUpModel3 {
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    height: 97%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: rgb(14,14,14);
+    background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    
+}
+
+
+#popUpModel4 {
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    height: 97%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: rgb(14,14,14);
+    background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    
+}
+#popUpModel5 {
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    height: 97%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: rgb(14,14,14);
+    background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    
+}
+
+#popUpModel5:target {
+    display: block;
+}
+
+
+#popUpModel4:target {
+    display: block;
+}
+
+#popUpModel3:target {
+    display: block;
+}
+
+#popUpModel2:target {
+    display: block;
+}
+
+#popUpModel:target {
+    display: block;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+
+}
+
+/* Conteúdo Box */
+
+.linkClose {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    right: 0;
+    margin-right: 45px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+ 
+    
+}
+
+.boxTitle {
+    color: #fafafa;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+  
+}
+
+.boxSubtitle {
+    color: #9b1e1e;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 5;
+    text-align: center;
+    margin-top: 3px;
+    letter-spacing: 2px;
+   
+    
+}
+
+.boxText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #fafafa ;
+    padding-bottom: 30px;
+    
+}
+
+.boxImgs {
+    width: 95%;
+    height: 95%;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 9px;
+    
+}
+
+/* Nav */
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 20px;
+    padding-top: 20px;
+ 
+}
+
+.linksNav {
+    text-decoration: none;
+    color: #afafaf;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+   
+}
+
+.linksNav:active {
+    color: #fafafa;
+}
+
+/*Footer*/
+
+.footerBackground{
+    background-image: url(../img/bg.jpeg);
+    width: 100%;
+    background-size: cover;
+    background-position-y: 100px;
+    background-position-x: 80px;
+    
+    
+}
+
+footer {
+    height: 90px;
+    margin-top: 40px;
+    
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.conteudoFooter {
+    padding-top: 10px;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom:dotted #ffffff 1px;
+}
+
+@media screen and (min-width: 756px) {
+
+
+    /*Conteúdos Banner */
+
+    .linkVerMais {
+        text-align: center;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        width: 68px;
+        height: 15px;
+        top: 0px;
+        text-decoration: none;
+        margin:0 ;
+        color: white;
+        background: linear-gradient(45deg, rgba(128, 26, 26) , rgba(205,26,26));
+        padding: 15px 25px 15px 25px;
+        border-radius: 30px;
+        margin-top: 0px;
+        top: 50px;
+      
+    }
+
+    .kyotoBannerTitle {
+        color: #fafafa;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        text-align: center ;
+        font-size: 130px;
+        margin-bottom: 30px;
+        display:flex;
+        justify-content: center;
+    }
+
+    /*Imagens Banner */
+    
+    .imagemBanner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../img/KyotoBanner2.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .imagemBannerTokyo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../img/TokyoBanner2.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+    
+    .imagemBannerVancouver {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../img/VancouverBanner2.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+    
+    .imagemBannerNewYork {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../img/NovaYorkBanner2.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+    
+    .imagemBannerOsaka {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../img/OsakaBanner2.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    /*Header*/
+
+   .headerContent {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: nowrap;
+   }
+
+   .tituloPrincipal {
+    max-width:700px;
+    max-height:700px;
+    position: relative;
+    top: -130px;
+    margin-top: 40px;
+    z-index: 0;
+   
+    }
+
+   
+
+    header {
+        background-image: url(../img/bg.jpg);
+        background-size: cover, auto;
+        height: 100vh;
+        background-position: left;
+        flex-direction: column;
+    }
+
+    .linkLetsGo {
+        text-align: center;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        width: 68px;
+        height: 15px;
+        top: 0px;
+        text-decoration: none;
+        margin:0 ;
+        color: white;
+        background: linear-gradient(45deg, rgb(128, 26, 26) 0%, rgba(205,26,26,1) 100%);
+        padding: 15px 25px 15px 25px;
+        border-radius: 30px;
+        display: flex;
+        top: -150px;
+    }
+
+    /* Pop Up Config */
+
+    #popUpModel {
+
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 95%;
+        height: 97%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 20px;
+    }
+    
+    #popUpModel2 {
+        
+        margin-left: 10px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 95%;
+        height: 97%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 20px;
+        
+    }
+    
+    #popUpModel3 {
+        margin-left: 10px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 95%;
+        height: 97%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 20px;
+    }
+    
+    
+    #popUpModel4 {
+        margin-left: 10px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 95%;
+        height: 97%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 20px;
+    }
+    #popUpModel5 {
+        margin-left: 10px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 95%;
+        height: 97%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 20px;
+    }
+    
+    #popUpModel5:target {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    #popUpModel4:target {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #popUpModel3:target {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #popUpModel2:target {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #popUpModel:target {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    
+    /*Header*/
+
+    .linkLetsGo {
+        width: 125px;
+        height: 34px;
+        padding: 8px 18px 8px 18px;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-radius: 50px;
+    }
+
+    .linkLetsGo:hover {
+        background: rgb(204, 72, 72);
+        transform: scale(1.1);
+        transition: all 0.5s ;
+        box-sizing: inherit;
+        display: absolute;
+    }
+
+    
+    /*Nav*/
+
+  
+
+    .linksNav:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ;
+    }
+
+
+    /* Conteúdo Banner */
+
+    .linkVerMais {
+        text-align: center;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        width: 68px;
+        height: 15px;
+        top: 0px;
+        text-decoration: none;
+        margin:0 ;
+        color: white;
+        background: linear-gradient(45deg, rgba(128, 26, 26) , rgba(205,26,26));
+        padding: 15px 25px 15px 25px;
+        border-radius: 30px;
+        margin-top: 0px;
+        top: 90px;
+      
+    }
+
+
+
+
+    .linkVerMais:hover{
+        background: rgb(204, 72, 72);
+        transform: scale(1.1);
+        transition: all 0.5s ;
+        box-sizing: inherit;
+        display: absolute;
+    }
+
+    .kyotoBannerTitle {
+        color: #fafafa;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        text-align: center ;
+        font-size: 180px;
+        display: absolute;
+        top: -80px;
+    }
+    
+    
+    
+    /*Imagens Banners*/
+
+    .imagemBanner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        background-image: url(../img/KyotoBanner2.jpg);
+        background-size: 4000px;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+    
+    .imagemBannerTokyo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        background-image: url(../img/TokyoBanner2.jpg);
+        background-size: 4000px;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 60px;
+        
+    }
+
+    
+
+
+    .imagemBannerVancouver {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        background-image: url(../img/VancouverBanner2.jpg);
+        background-size: 4000px;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+    .imagemBannerNewYork {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        background-image: url(../img/NovaYorkBanner2.jpg);
+        background-size: 4000px;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+   
+    .imagemBannerOsaka {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        background-image: url(../img/OsakaBanner2.jpg);
+        background-size: 4000px;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+
+    /*Conteúdo Pop Up */
+
+    .boxTitle {
+        color: #fafafa;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 80px;
+        letter-spacing: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+      
+    }
+    
+    .boxSubtitle {
+        color: #9b1e1e;
+        font-family: 'Bebas Neue', cursive;
+        font-family: 5;
+        text-align: center;
+        margin-top: 3px;
+        letter-spacing: 2px;
+        font-size: 30px;
+       
+        
+    }
+    
+    .boxText {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-align: center;
+        margin-left: 140px;
+        margin-right: 140px;
+        color: #fafafa ;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    .boxImgs {
+        width: 600px;
+        height: 85%;
+        border-radius: 30px;
+       
+        
+    }
+    
+    .divImgsBox {
+        display: grid;
+        grid-template-columns: 620px 620px;
+        
+    }
+
+    .boxGrid3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    /*scroll bar*/
+
+    body::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+    }
+
+    body::-webkit-scrollbar {
+        width: 6px;
+        background-color: black;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(10px 10px black);
+    }
+
+    #popUpModel::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+        border-radius: 10px;  
+        height: 20px;
+      }
+
+    #popUpModel::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(26, 25, 25);
+    }
+
+    #popUpModel::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(30px 10px 4px black);
+    }
+
+    #popUpModel::-webkit-scrollbar-corner {
+        color: #1a1a1a;
+    }
+
+    #popUpModel::-webkit-scrollbar-thumb {
+        height: 10px;
+        width: 10px;
+    }
+
+    #popUpModel2::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+        border-radius: 10px;  
+        height: 20px;
+      }
+
+    #popUpModel2::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(26, 25, 25);
+    }
+
+    #popUpModel2::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(30px 10px 4px black);
+    }
+
+    #popUpModel2::-webkit-scrollbar-corner {
+        color: #1a1a1a;
+    }
+
+    #popUpModel2::-webkit-scrollbar-thumb {
+        height: 10px;
+        width: 10px;
+    }
+
+    #popUpModel3::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+        border-radius: 10px;  
+        height: 20px;
+      }
+
+    #popUpModel3::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(26, 25, 25);
+    }
+
+    #popUpModel3::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(30px 10px 4px black);
+    }
+
+    #popUpModel3::-webkit-scrollbar-corner {
+        color: #1a1a1a;
+    }
+
+    #popUpModel3::-webkit-scrollbar-thumb {
+        height: 10px;
+        width: 10px;
+    }
+
+    #popUpModel4::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+        border-radius: 10px;  
+        height: 20px;
+      }
+
+    #popUpModel4::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(26, 25, 25);
+    }
+
+    #popUpModel4::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(30px 10px 4px black);
+    }
+
+    #popUpModel4::-webkit-scrollbar-corner {
+        color: #1a1a1a;
+    }
+
+    #popUpModel4::-webkit-scrollbar-thumb {
+        height: 10px;
+        width: 10px;
+    }
+
+    #popUpModel5::-webkit-scrollbar-track {
+        background-color: #1a1a1a;
+        border-radius: 10px;  
+        height: 20px;
+      }
+
+    #popUpModel5::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(26, 25, 25);
+    }
+
+    #popUpModel5::-webkit-scrollbar-thumb {
+        background: #353535;
+        border-radius: 30px;
+        filter: drop-shadow(30px 10px 4px black);
+    }
+
+    #popUpModel5::-webkit-scrollbar-corner {
+        color: #1a1a1a;
+    }
+
+    #popUpModel5::-webkit-scrollbar-thumb {
+        height: 10px;
+        width: 10px;
+    }
+  
+
+    /*Pop Up config*/
+
+    #popUpModel {
+        
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width:95%;
+        height: 98%;
+        border-radius: 30px;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 40px;    
+    }
+
+    #popUpModel:target {
+        display: flex;
+        justify-content: center;
+    }
+
+    #popUpModel2 {
+        
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width:95%;
+        height: 98%;
+        border-radius: 30px;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 40px;
+    
+    }
+
+    #popUpModel2:target {
+        display: flex;
+        justify-content: center;
+    }
+
+    #popUpModel3 {
+        
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width:95%;
+        height: 98%;
+        border-radius: 30px;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 40px;
+    
+    }
+
+    #popUpModel3:target {
+        display: flex;
+        justify-content: center;
+    }
+
+    #popUpModel4 {
+        
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width:95%;
+        height: 98%;
+        border-radius: 30px;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 40px;
+    
+    }
+
+    #popUpModel4:target {
+        display: flex;
+        justify-content: center;
+    }
+
+    #popUpModel5 {
+        
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width:95%;
+        height: 98%;
+        border-radius: 30px;
+        background: rgb(14,14,14);
+        background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(27,27,27,1) 100%);
+        position: fixed;
+        display: none;
+        overflow-y: auto;
+        margin-left: 40px;
+    
+    }
+
+    #popUpModel5:target {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
 }

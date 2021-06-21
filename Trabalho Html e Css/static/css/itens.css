@@ -1,0 +1,179 @@
+/* Conteúdos Box */
+
+.titleItens{
+    color: #d3d2d2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.itensBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.linkArrow {
+    text-decoration: none;
+    color: #d3d2d2;
+    padding-right: 6px;
+    padding-top: 5px;
+}
+
+/* Pop Up Config */
+
+#popUpBox {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: none; 
+    margin-top: 0px;  
+    position: relative;
+    top: -5px;
+}
+
+#popUpBox:target {
+    display: block;
+}
+
+#popUpBox:target-within {
+    display: none;
+}
+
+.backButton {
+    text-decoration: none;
+    color: #d3d2d2;
+    display:flex;
+    float: right;
+    padding-right: 7px;
+}
+
+.amazonDiv {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 94%;
+    height: 30px;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-right: 0px;
+    margin-left: 10px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.219));
+    
+}
+
+.amazonText {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+#popUpBox2 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: none; 
+    margin-top: 0px;  
+    position: relative;
+    top: -5px;
+}
+
+#popUpBox2:target {
+    display: block;
+}
+
+#popUpBox3 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: none; 
+    margin-top: 0px;  
+    position: relative;
+    top: -5px;
+}
+
+#popUpBox3:target{
+    display: block;
+}
+
+#popUpBox4 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: none; 
+    margin-top: 0px;  
+    position: relative;
+    top: -5px;
+}
+
+#popUpBox4:target{
+    display: block;
+}
+
+#popUpBox5 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: none; 
+    margin-top: 0px;  
+    position: relative;
+    top: -5px;
+}
+
+#popUpBox5:target{
+    display: block;
+}
+
+.main {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+    
+    .amazonDiv {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        width: 99%;
+        height: 30px;
+        color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        margin-right: 0px;
+        margin-left: 10px;
+        background-color: rgb(63, 63, 63);
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        margin-bottom: 40px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.219));
+        
+    }
+}
